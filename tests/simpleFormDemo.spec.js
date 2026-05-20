@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('../lambdatest-setup');
 
 test('Simple Form Demo – Validate message', async ({ page }) => {
 

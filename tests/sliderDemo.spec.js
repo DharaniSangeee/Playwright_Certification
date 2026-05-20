@@ -1,4 +1,4 @@
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('../lambdatest-setup');
 
 test('Drag slider from 15 to 95', async ({ page }) => {
 
@@ -31,4 +31,3 @@ test('Drag slider from 15 to 95', async ({ page }) => {
     await expect(slider).toHaveValue('95');
     await expect(output).toHaveText('95');
 });
-
